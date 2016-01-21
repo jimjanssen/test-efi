@@ -26,7 +26,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0</string>
+		<string>dart=0 darkwake=no</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -148,20 +148,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>10.9-10.11-AppleHDA/Realtek ALC898</string>
-				<key>Find</key>
-				<data>
-				ixnUEQ==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				mQjsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>10.11-AppleHDA/Realtek ALC...</string>
 				<key>Find</key>
 				<data>
@@ -176,20 +162,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>AppleHDA/Resources/xml&gt;zml</string>
 				<key>Find</key>
 				<data>
@@ -200,6 +172,34 @@
 				<key>Replace</key>
 				<data>
 				em1sLnps
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.9-10.11-AppleHDA/Realtek ALC898</string>
+				<key>Find</key>
+				<data>
+				ixnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				mQjsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>External icons patch</string>
+				<key>Find</key>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
+				<key>Name</key>
+				<string>AppleAHCIPort</string>
+				<key>Replace</key>
+				<data>
+				SW50ZXJuYWw=
 				</data>
 			</dict>
 		</array>
