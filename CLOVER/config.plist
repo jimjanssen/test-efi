@@ -10,103 +10,35 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Fixes</key>
-			<dict>
-				<key>AddDTGP_0001</key>
-				<false/>
-				<key>AddHDMI_8000000</key>
-				<false/>
-				<key>AddIMEI_80000</key>
-				<false/>
-				<key>AddMCHC_0008</key>
-				<false/>
-				<key>AddPNLF_1000000</key>
-				<false/>
-				<key>DeleteUnused_400000</key>
-				<false/>
-				<key>FIX_ACST_4000000</key>
-				<false/>
-				<key>FIX_ADP1_800000</key>
-				<false/>
-				<key>FIX_INTELGFX_100000</key>
-				<false/>
-				<key>FIX_RTC_20000</key>
-				<false/>
-				<key>FIX_S3D_2000000</key>
-				<false/>
-				<key>FakeLPC_0020</key>
-				<false/>
-				<key>FiX_TMR_40000</key>
-				<false/>
-				<key>FiX_WAK_200000</key>
-				<false/>
-				<key>FixAirport_4000</key>
-				<false/>
-				<key>FixDarwin_0002</key>
-				<false/>
-				<key>FixDisplay_0100</key>
-				<false/>
-				<key>FixFirewire_0800</key>
-				<false/>
-				<key>FixHDA_8000</key>
-				<false/>
-				<key>FixHPET_0010</key>
-				<false/>
-				<key>FixIDE_0200</key>
-				<false/>
-				<key>FixIPIC_0040</key>
-				<false/>
-				<key>FixLAN_2000</key>
-				<false/>
-				<key>FixRegions_10000000</key>
-				<false/>
-				<key>FixSATA_0400</key>
-				<false/>
-				<key>FixSBUS_0080</key>
-				<false/>
-				<key>FixShutdown_0004</key>
-				<false/>
-				<key>FixUSB_1000</key>
-				<false/>
-				<key>NewWay_80000000</key>
-				<false/>
-			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
-			<dict>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-			</dict>
+			<false/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
 		<string>dart=0</string>
+		<key>Debug</key>
+		<false/>
 		<key>DefaultVolume</key>
 		<string>El Capitan</string>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>Log</key>
-		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<string>NO</string>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -114,6 +46,8 @@
 		<dict>
 			<key>Inject</key>
 			<string>1</string>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -141,8 +75,6 @@
 			<key>Inject</key>
 			<false/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -159,8 +91,12 @@
 		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
+			<key>DoubleClick</key>
+			<integer>500</integer>
 			<key>Enabled</key>
 			<true/>
+			<key>Mirror</key>
+			<false/>
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
@@ -189,6 +125,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>NvidiaSingle</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -196,6 +134,8 @@
 		<true/>
 		<key>AsusAICPUPM</key>
 		<true/>
+		<key>Debug</key>
+		<false/>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
@@ -208,16 +148,16 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>External icons patch</string>
+				<string>10.9-10.11-AppleHDA/Realtek ALC898</string>
 				<key>Find</key>
 				<data>
-				RXh0ZXJuYWw=
+				ixnUEQ==
 				</data>
 				<key>Name</key>
-				<string>AppleAHCIPort</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				SW50ZXJuYWw=
+				mQjsEA==
 				</data>
 			</dict>
 			<dict>
@@ -236,16 +176,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.9-10.11-AppleHDA/Realtek ALC898</string>
+				<string>External icons patch</string>
 				<key>Find</key>
 				<data>
-				ixnUEQ==
+				RXh0ZXJuYWw=
 				</data>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>
-				mQjsEA==
+				SW50ZXJuYWw=
 				</data>
 			</dict>
 			<dict>
@@ -295,8 +235,6 @@
 		<string>Mac Pro</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<false/>
 		<key>ProductName</key>
 		<string>MacPro3,1</string>
 		<key>SerialNumber</key>
@@ -309,7 +247,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>YES</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
